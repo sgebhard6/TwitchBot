@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Valid response arguments include target and other -->
+<!-- Target will refer to the chatter that called the command -->
+<!-- Other will refer to the contents of the chat message after the command -->
+
+<Commands>
+  <Command command="trivia-help" createButton="true" editable="false">
+    <Methods>
+      <Method>
+        <MethodName>SendMessage</MethodName>
+        <Parameters>
+          <Parameter type="content">Trivia Help</Parameter>
+        </Parameters>
+      </Method>
+    </Methods>
+  </Command>
+  <Command command="trivia-categories" createButton="true" editable="false">
+    <Methods>
+      <Method>
+        <MethodName>SendMessage</MethodName>
+        <Parameters>
+          <Parameter type="content">Trivia Categories include: Animals | Art | Board Games | Books | Cartoon &amp; Animations | Celebrities | Comics | Computers | Film | Gadgets | General Knowledge | Geography | History | Japanese Anime &amp; Manga | Mathematics | Music | Musicals &amp; Theatres | Mythology | Politics | Science &amp; Nature | Sports | Television | Vehicles | Video Games</Parameter>
+        </Parameters>
+      </Method>
+    </Methods>
+  </Command>
+  <Command command="trivia" createButton="true" editable="false">
+    <Methods>
+      <Method>
+        <MethodName>StartTrivia</MethodName>
+        <Parameters>
+          <Parameter></Parameter>
+        </Parameters>
+      </Method>
+      <Method>
+        <MethodName>SendMessage</MethodName>
+        <Parameters>
+          <Parameter type="content">Starting Trivia</Parameter>
+        </Parameters>
+      </Method>
+    </Methods>
+  </Command>
+  <Command command="trivia" createButton="true" editable="false">
+    <Methods>
+      <Method>
+        <MethodName>StartTrivia</MethodName>
+        <Parameters>
+          <Parameter type ="argument">Difficulty</Parameter>
+        </Parameters>
+      </Method>
+      <Method>
+        <MethodName>SendMessage</MethodName>
+        <Parameters>
+          <Parameter type="content">Starting Trivia</Parameter>
+        </Parameters>
+      </Method>
+    </Methods>
+  </Command>
+  <Command command="trivia" createButton="true" editable="false">
+    <Methods>
+      <Method>
+        <MethodName>StartTrivia</MethodName>
+        <Parameters>
+          <Parameter type ="argument">Category</Parameter>
+        </Parameters>
+      </Method>
+      <Method>
+        <MethodName>SendMessage</MethodName>
+        <Parameters>
+          <Parameter type="content">Starting Trivia</Parameter>
+        </Parameters>
+      </Method>
+    </Methods>
+  </Command>
+  <Command command="trivia" createButton="true" editable="false">
+    <Methods>
+      <Method>
+        <MethodName>StartTrivia</MethodName>
+        <Parameters>
+          <Parameter type ="argument">Category</Parameter>
+          <Parameter type ="argument">Difficulty</Parameter>
+        </Parameters>
+      </Method>
+      <Method>
+        <MethodName>SendMessage</MethodName>
+        <Parameters>
+          <Parameter type="content">Starting Trivia</Parameter>
+        </Parameters>
+      </Method>
+    </Methods>
+  </Command>
+</Commands>
