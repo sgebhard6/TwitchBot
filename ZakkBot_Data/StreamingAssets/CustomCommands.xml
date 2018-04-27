@@ -24,14 +24,4 @@
       </Method>
     </Methods>
   </Command>
-  <Command command="ability" createButton="true" editable="true">
-    <Methods>
-      <Method>
-        <MethodName>SendMessage</MethodName>
-        <Parameters>
-          <Parameter type="content">this is a new ability</Parameter>
-        </Parameters>
-      </Method>
-    </Methods>
-  </Command>
 </Commands>

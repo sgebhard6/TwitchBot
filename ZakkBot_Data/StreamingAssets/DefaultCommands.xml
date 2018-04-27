@@ -5,7 +5,7 @@
 <!-- Other will refer to the contents of the chat message after the command -->
 
 <Commands>
-  <Command command="trivia-help" createButton="true" editable="false">
+  <Command command="trivia-help" createButton="false" editable="false">
     <Methods>
       <Method>
         <MethodName>SendMessage</MethodName>
@@ -15,7 +15,7 @@
       </Method>
     </Methods>
   </Command>
-  <Command command="trivia-categories" createButton="true" editable="false">
+  <Command command="trivia-categories" createButton="false" editable="false">
     <Methods>
       <Method>
         <MethodName>SendMessage</MethodName>
@@ -25,7 +25,7 @@
       </Method>
     </Methods>
   </Command>
-  <Command command="trivia" createButton="true" editable="false">
+  <Command command="trivia" createButton="false" editable="false">
     <Methods>
       <Method>
         <MethodName>StartTrivia</MethodName>
@@ -41,7 +41,7 @@
       </Method>
     </Methods>
   </Command>
-  <Command command="trivia" createButton="true" editable="false">
+  <Command command="trivia" createButton="false" editable="false">
     <Methods>
       <Method>
         <MethodName>StartTrivia</MethodName>
@@ -57,7 +57,7 @@
       </Method>
     </Methods>
   </Command>
-  <Command command="trivia" createButton="true" editable="false">
+  <Command command="trivia" createButton="false" editable="false">
     <Methods>
       <Method>
         <MethodName>StartTrivia</MethodName>
@@ -73,7 +73,7 @@
       </Method>
     </Methods>
   </Command>
-  <Command command="trivia" createButton="true" editable="false">
+  <Command command="trivia" createButton="false" editable="false">
     <Methods>
       <Method>
         <MethodName>StartTrivia</MethodName>
@@ -86,6 +86,46 @@
         <MethodName>SendMessage</MethodName>
         <Parameters>
           <Parameter type="content">Starting Trivia</Parameter>
+        </Parameters>
+      </Method>
+    </Methods>
+  </Command>
+  <Command command="death-count" createButton="true" editable="true">
+    <Methods>
+      <Method>
+        <MethodName>DeathCount</MethodName>
+        <Parameters>
+          <Parameter type="content">Current Death Count: </Parameter>
+        </Parameters>
+      </Method>
+    </Methods>
+  </Command>
+  <Command command="death" createButton="true" editable="false">
+    <Methods>
+      <Method>
+        <MethodName>AddDeath</MethodName>
+        <Parameters>
+          <Parameter type="content">Current Death Count: </Parameter>
+        </Parameters>
+      </Method>
+    </Methods>
+  </Command>
+  <Command command="add-deaths" createButton="true" editable="false">
+    <Methods>
+      <Method>
+        <MethodName>AddDeath</MethodName>
+        <Parameters>
+          <Parameter type="content">Current Death Count: </Parameter>
+          <Parameter type ="argument">Number</Parameter>
+        </Parameters>
+      </Method>
+    </Methods>
+  </Command>
+  <Command command="clear-deaths" createButton="true" editable="false">
+    <Methods>
+      <Method>
+        <MethodName>ClearDeaths</MethodName>
+        <Parameters>
         </Parameters>
       </Method>
     </Methods>
